@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="20dp"
+    app:cardElevation="7dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/place_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:id="@+id/place_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="right">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/button_accept_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    app:fabSize="mini"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/green"
+                    android:src="@drawable/ic_done_all"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/button_reject_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/red"
+                    app:fabSize="mini"
+                    android:src="@drawable/ic_block"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            card_view:cardCornerRadius="20dp"
+            app:cardElevation="50dp">
+
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/place_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:tint="#EBEDEF"
+                app:tintMode="multiply"
+                android:src="@mipmap/ic_launcher_round" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="10sp"
+            android:paddingRight="25dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/item_place_start_time"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/fondo_info"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Horario" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/item_place_closing_time"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/fondo_info"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/closing_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Horario" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/place_direction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="dirección"
+                    android:gravity="end"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                >
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

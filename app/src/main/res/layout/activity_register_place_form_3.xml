@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/register_place_title_choose_categorie"
+        tools:ignore="MissingConstraints"
+        style="@style/titles"
+        />
+
+    <TextView
+        android:id="@+id/informative_text"
+        android:text="@string/register_place_general_text_choose_categorie"
+        android:layout_marginTop="12sp"
+        android:textAlignment="center"
+        style="@style/informative_text"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_marginTop="40sp"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/btn_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:text="@string/register_place_categorie_hotel"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/button_custom"/>
+
+    <Button
+        android:id="@+id/btn_coffe"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:text="@string/register_place_categorie_cafe"
+        android:background="@drawable/button_custom"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_restaurant"
+        android:layout_width="150sp"
+        android:layout_height="40sp"
+        android:text="@string/register_place_categorie_restaurant"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/button_custom"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_marginTop="30sp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_park"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="@string/register_place_categorie_park"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/button_custom"/>
+
+        <Button
+            android:id="@+id/btn_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="@string/register_place_categorie_bar"
+            android:background="@drawable/button_custom"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.infoPlaceFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:backgroundTint="#D1D1D1"
+            android:background="@drawable/shape_detail_image"/>
+        <ImageView
+            android:id="@+id/place_image"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:backgroundTint="#6A6A6A"
+            android:background="@drawable/shape_detail_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginRight="5dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Texto 2" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                app:strokeWidth="5dp"
+                app:shapeAppearanceOverlay="@style/circular"
+                app:strokeColor="@color/white"
+                android:src="@mipmap/ic_launcher_round"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:text="Texto 1" />
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Texto 2" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_star" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Texto 2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_watch"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Texto 2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_comment"/>
+
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Comentarios" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/place_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/place_image"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/place_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/place_icon_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/font_awesome_6_free_solid_900"  />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"
+                android:text="\uf05a"
+                android:fontFamily="@font/font_awesome_6_free_solid_900" />
+
+            <TextView
+                android:id="@+id/place_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Descripción del lugar" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:background="#989696" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"
+                android:text="\uf017"
+                android:fontFamily="@font/font_awesome_6_free_solid_900" />
+
+            <TextView
+                android:id="@+id/place_schedules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Horarios del lugar" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:background="#989696" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"
+                android:text="\uf124"
+                android:fontFamily="@font/font_awesome_6_free_solid_900" />
+
+            <TextView
+                android:id="@+id/place_direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Dirección del lugar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"
+                android:text="\uf095"
+                android:fontFamily="@font/font_awesome_6_free_solid_900" />
+
+            <TextView
+                android:id="@+id/place_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Teléfono del lugar" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/mapa_lugar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="15dp"
+            android:background="#EFD0F4" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

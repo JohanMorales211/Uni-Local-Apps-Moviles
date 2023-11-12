@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+
+    <TextView
+        android:paddingLeft="45dp"
+        android:id="@+id/txt_names"
+        android:text="@string/register_user_name"
+        tools:ignore="MissingConstraints"
+        style="@style/txt_views"
+        />
+
+    <EditText
+        android:id="@+id/user_name"
+        style="@style/inp_texts"/>
+
+    <TextView
+        android:paddingLeft="45dp"
+        android:id="@+id/txt_last_names"
+        android:text="@string/register_user_last_name"
+        style="@style/txt_views"
+        />
+
+    <EditText
+        android:id="@+id/user_last_names"
+        style="@style/inp_texts"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:paddingLeft="45dp"
+        android:id="@+id/txt_email"
+        android:text="@string/register_user_email"
+        style="@style/txt_views"
+        />
+
+    <EditText
+        android:id="@+id/user_email"
+        style="@style/inp_texts"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:paddingLeft="45dp"
+        android:id="@+id/txt_user_username"
+        android:text="@string/register_user_username"
+        style="@style/txt_views"
+        />
+
+    <EditText
+        android:id="@+id/user_username"
+        style="@style/inp_texts"/>
+
+    <TextView
+        android:paddingLeft="45dp"
+        android:id="@+id/txt_pass"
+        android:text="@string/register_user_pass"
+        style="@style/txt_views"
+        />
+
+    <EditText
+        android:id="@+id/user_pass"
+        style="@style/inp_texts"/>
+
+
+
+</LinearLayout>

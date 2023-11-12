@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
+
+
+    <TextView
+        android:paddingLeft="45dp"
+        android:id="@+id/txt_phone"
+        android:text="@string/register_user_phone"
+        style="@style/txt_views"
+        android:layout_marginTop="49dp"
+        />
+
+    <EditText
+        android:id="@+id/user_phone"
+        style="@style/inp_texts"
+        android:inputType="number"/>
+
+    <!--COUNTRY-DEPART LAYOUT-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_country"
+                android:text="@string/register_user_country"
+                tools:ignore="MissingConstraints"
+                style="@style/txt_views"
+                android:layout_marginLeft="45sp"
+                />
+
+            <EditText
+                android:id="@+id/user_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_inputs_style"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="45sp"
+                android:layout_marginRight="45sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_department"
+                android:text="@string/register_user_department"
+                tools:ignore="MissingConstraints"
+                style="@style/txt_views"
+                />
+
+            <EditText
+                android:id="@+id/user_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_inputs_style"
+                android:layout_marginRight="45sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--END COUNTRY-DEPART LAYOUT-->
+
+    <!--CITY-AGE LAYOUT-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_user_city"
+                android:text="@string/register_user_city"
+                tools:ignore="MissingConstraints"
+                style="@style/txt_views"
+                android:layout_marginLeft="45sp"
+                />
+
+            <EditText
+                android:id="@+id/user_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_inputs_style"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="45sp"
+                android:layout_marginRight="45sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_age"
+                android:text="@string/register_user_age"
+                tools:ignore="MissingConstraints"
+                style="@style/txt_views"
+                />
+
+            <EditText
+                android:id="@+id/user_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_inputs_style"
+                android:inputType="number"
+                android:layout_marginRight="45sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--END CITY-AGE LAYOUT-->
+    <LinearLayout
+        android:layout_marginLeft="45sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/user_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/register_user_accept"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_user_terms"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:textColor="#0078B0"
+            />
+    </LinearLayout>
+</LinearLayout>

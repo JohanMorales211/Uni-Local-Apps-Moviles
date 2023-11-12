@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--LOGIN STRINGS-->
+    <string name="app_name">Unilocal</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email (ejemplo@gmail.com)</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="title">Log In</string>
+    <string name="not_have_account">Don\'t have an account?</string>
+    <string name="login_msg_welcome">Welcome</string>
+    <string name="login_msg_user_do_not_exist">No registered user found</string>
+    <string name="login_msg_pass_do_not_match">Password doesn\'t match</string>
+    <string name="login_msg_pass_required">It must be at least 8 characters long and contain one uppercase letter, one lowercase letter and one number.</string>
+
+
+    <!--REGISTER STRINGS-->
+    <string name="register_user_title_register">Sign up</string>
+    <string name="register_user_want_know_you">We want to know you better</string>
+    <string name="register_user_next">Next</string>
+    <string name="register_user_finish">Finish</string>
+    <string name="register_user_choose_photo">Choose picture</string>
+    <string name="register_user_msg_email_exists">Email already exists</string>
+    <string name="register_user_msg_username_exists">username already exists</string>
+    <string name="register_user_msg_phone_exists">Phone number already exists</string>
+    <string name="register_user_msg_all_inpts_obligatories">All fields must be filled in</string>
+    <string name="register_user_msg_terms_not_checked">You must accept the terms and conditions</string>
+    <string name="register_user_msg_user_registered">User registered</string>
+    <string name="register_user_msg_allow_permissions">You need to enable the permissions </string>
+    <string name="register_user_msg_invalid_age">Age over 18 and under 110</string>
+    <string name="register_user_msg_invalid_phone">10 digit phone number</string>
+    <string name="register_user_msg_invalid_category">Only choose a category</string>
+    <string name="register_now">register now</string>
+
+    <!--REGISTER STRINGS FORM 1-->
+    <string name="register_user_name">Names</string>
+    <string name="register_user_last_name">Last names</string>
+    <string name="register_user_email">Email</string>
+    <string name="register_user_username">Username</string>
+    <string name="register_user_pass">Password</string>
+
+    <!--REGISTER STRINGS FORM 2-->
+    <string name="register_user_phone">Phone number</string>
+    <string name="register_user_country">Country</string>
+    <string name="register_user_department">Department</string>
+    <string name="register_user_city">City</string>
+    <string name="register_user_age">Age</string>
+    <string name="register_user_accept">Accept</string>
+    <string name="register_user_terms">terms and conditions</string>
+    <string name="register_user_choose_button">Click on the \"Choose picture\"\n button for add your \n profile picture </string>
+
+
+    <!--FORGOT PASS STRINGS-->
+    <string name="forgot_sorry">Wow... :(</string>
+    <string name="forgot_recover_pass">You don\'t seem to \nyour password, Do you want to recover it?</string>
+    <string name="forgot_btn_send">Send</string>
+    <string name="forgot_msg_obligatorie_inputs">This field is required</string>
+    <string name="forgot_msg_obligatorie_all_inputs">All fields must be filled in</string>
+    <string name="forgot_msg_email_registered">Email already exists</string>
+    <string name="forgot_msg_passwords_do_not_match">Passwords don\'t match</string>
+    <string name="forgot_msg_pass_changed">Password changed</string>
+
+
+    <!--FORGOT PASS STRINGS FORM 1 -->
+    <string name="forgot_new_pass">New Password</string>
+    <string name="forgot_repeat_new_pass">Confirm new password</string>
+    <string name="forgot_invalid_email">Please enter a valid email address</string>
+
+
+    <!-- REGISTER PLACE STRINGS FORM 1-->
+    <string name="register_place_choose_photos">Choose pictures</string>
+    <string name="register_place_title_register_place">register place</string>
+    <string name="register_place_general_text">General information about the place\nnecessary to have...</string>
+    <string name="register_place_name">Name of the place</string>
+    <string name="register_place_description">Description of the place</string>
+    <string name="register_place_open_time">Opening time</string>
+    <string name="register_place_close_time">Closing time</string>
+    <string name="register_place_phone">Contact phone number</string>
+    <string name="register_place_secundary_phone">Secondary phone number</string>
+    <string name="register_place_adress">Direction</string>
+    <string name="register_place_take_photo">Take photo</string>
+
+    <!-- REGISTER PLACE STRINGS FORM 2-->
+    <string name="register_place_title_choose_place_map">Determine location</string>
+    <string name="register_place_general_text_choose_map">Determining the location of your place\nwill help people identify it accurately</string>
+
+    <!-- REGISTER PLACE STRINGS FORM 3-->
+    <string name="register_place_title_choose_categorie">Choose category</string>
+    <string name="register_place_general_text_choose_categorie">Determining categories will help \ndifferentiate your site from others</string>
+    <string name="register_place_categorie_hotel">Hotel</string>
+    <string name="register_place_categorie_cafe">Café</string>
+    <string name="register_place_categorie_restaurant">Restaurant</string>
+    <string name="register_place_categorie_park">Park</string>
+    <string name="register_place_categorie_bar">Bar</string>
+
+    <!-- REGISTER PLACE STRINGS FORM 4-->
+    <string name="register_place_title_choose_images">Choose pictures</string>
+    <string name="register_place_general_text_choose_images">Putting images of your place will also\nhelp to differentiate it from others</string>
+    <string name="register_place_choose_images">Click on the \"Choose Pictures\" button \nto add the pictures of the place</string>
+
+    <!-- REGISTER PLACE ALERTS -->
+    <string name="register_place_alerts_registered">Place Registered</string>
+    <string name="register_place_alerts_fields_filled">Make sure that all fields are filled in correctly.</string>
+    <string name="register_place_alerts_same_numbers">Must be a different contact number</string>
+    <string name="register_place_alerts_opening_larger">The Opening time may not be larger than the closing time</string>
+
+    <!-- MAP STRINGS -->
+    <string name="search_bar">Search here</string>
+    <string name="right_here">Right Aquí</string>
+
+    <!-- DETAIL PLACE STRINGS -->
+    <string name="detail_place_open">Open</string>
+    <string name="detail_place_closed">Closed</string>
+    <string name="detail_place_under_review">UNDER REVIEW</string>
+    <string name="detail_place_refused">REFUSED (ADMIN)</string>
+    <string name="detail_place_rating">No rating</string>
+
+    <!-- ITEM PLACE STRINGS -->
+    <string name="item_place_calification">Calification</string>
+    <string name="item_place_status">Status</string>
+    <string name="item_place_start_time">Opening time</string>
+    <string name="item_place_closing_time">Closing time</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- SETTINGS -->
+    <string name="settings_title">Configuration</string>
+
+    <string name="settings_subtitle_notify">Notifications</string>
+    <string name="settings_subtitle_privacity">Privacity</string>
+    <string name="settings_subtitle_account">Account</string>
+
+    <string name="settings_option_toActivate_notify">Activate push notifications</string>
+    <string name="settings_option_privatize_account">Private account</string>
+    <string name="settings_option_toReceive_email">Receive e-mails</string>
+    <string name="settings_option_toShow_activity">Show activity status activity</string>
+
+    <string name="settings_change_language">Change Language</string>
+    <string name="settings_change_pass">Change password</string>
+    <string name="settings_logout">Log out</string>
+
+    <!-- PROFILE -->
+    <string name="frofile_title_my_places">My Places</string>
+</resources>

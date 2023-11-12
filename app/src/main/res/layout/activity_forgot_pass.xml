@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.unilocal.activities.ForgotPassActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_sorry"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints"
+        android:paddingLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/we_want_know_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_recover_pass"
+        android:textSize="29dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        tools:ignore="MissingConstraints"
+        android:justificationMode="inter_word"
+        app:layout_constraintTop_toBottomOf="@+id/main_title"
+        android:paddingLeft="50dp"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/form_pager_forgot"
+        android:layout_width="320dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/form_register_style"
+        android:elevation="30dp">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/position_layout"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_btn_send"
+        android:textSize="16dp"
+        android:layout_marginTop="100dp"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/app_color"
+        android:background="@drawable/border_style"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

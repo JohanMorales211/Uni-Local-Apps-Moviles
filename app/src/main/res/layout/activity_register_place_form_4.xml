@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/register_place_title_choose_images"
+        tools:ignore="MissingConstraints"
+        style="@style/titles"
+        />
+
+    <TextView
+        android:id="@+id/informative_text"
+        android:text="@string/register_place_general_text_choose_images"
+        android:layout_marginTop="12sp"
+        android:textAlignment="center"
+        style="@style/informative_text"
+        />
+
+<!--
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/form_pager_photos"
+        android:layout_width="200sp"
+        android:layout_height="250sp"
+        android:background="@drawable/form_register_style"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/position_layout_place"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/black"/>
+-->
+    <LinearLayout
+        android:id="@+id/images_sel"
+        android:layout_width="match_parent"
+        android:layout_height="125sp"
+        android:layout_marginEnd="35sp"
+        android:layout_marginStart="35sp"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        android:background="@drawable/form_register_style"/>
+
+
+    <LinearLayout
+        android:id="@+id/images_sel2"
+        android:layout_width="match_parent"
+        android:layout_height="125sp"
+        android:layout_marginEnd="35sp"
+        android:layout_marginStart="35sp"
+        android:orientation="horizontal"
+        android:background="@drawable/form_register_style"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_place_choose_images"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="25sp"
+        />
+
+</LinearLayout>

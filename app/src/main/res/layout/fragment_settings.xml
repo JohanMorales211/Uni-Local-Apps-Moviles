@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.SettingsFragment"
+    android:layout_marginTop="80dp"
+    android:layout_marginBottom="95dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textSize="24sp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_subtitle_notify"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_option_toReceive_email"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_subtitle_privacity"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_option_privatize_account"
+        android:padding="16dp"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_option_toShow_activity"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_subtitle_account"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/button_change_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_change_language"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/button_change_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_change_pass"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/button_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_logout"
+        android:padding="16dp"/>
+
+
+
+</LinearLayout>

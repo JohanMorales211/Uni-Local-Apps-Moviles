@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/register_place_title_register_place"
+        tools:ignore="MissingConstraints"
+        style="@style/titles"
+        />
+
+    <TextView
+        android:id="@+id/informative_text"
+        android:text="@string/register_place_general_text"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="20sp"
+        style="@style/informative_text"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:text="@string/register_place_name"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="0sp"
+                android:paddingLeft="45sp"
+                style="@style/txt_views"
+                />
+
+            <EditText
+                android:id="@+id/place_name"
+                style="@style/inp_texts"
+                />
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:text="@string/register_place_description"
+                tools:ignore="MissingConstraints"
+                android:paddingLeft="45sp"
+                style="@style/txt_views"
+                />
+
+            <EditText
+                android:id="@+id/place_description"
+                android:layout_height="150sp"
+                android:inputType="textMultiLine"
+                style="@style/inp_texts"
+                android:gravity="top|start"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/txt_open_hour"
+                        android:text="@string/register_place_open_time"
+                        tools:ignore="MissingConstraints"
+                        style="@style/txt_views"
+                        android:layout_marginLeft="45sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/place_open_hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45sp"
+                        android:layout_marginRight="45sp"
+                        android:background="@drawable/form_inputs_style"
+                        android:inputType="time"
+                        android:focusable="false"
+                        android:clickable="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1.5">
+                    <TextView
+                        android:id="@+id/txt_close_hour"
+                        android:text="@string/register_place_close_time"
+                        tools:ignore="MissingConstraints"
+                        style="@style/txt_views"
+                        />
+
+                    <EditText
+                        android:id="@+id/place_close_hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/form_inputs_style"
+                        android:layout_marginRight="45sp"
+                        android:inputType="time"
+                        android:focusable="false"
+                        android:clickable="false"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txt_phone"
+                android:text="@string/register_place_phone"
+                tools:ignore="MissingConstraints"
+                android:paddingLeft="45sp"
+                style="@style/txt_views"
+                />
+
+            <EditText
+                android:id="@+id/place_phone"
+                style="@style/inp_texts"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/txt_secundary_phone"
+                android:text="@string/register_place_secundary_phone"
+                tools:ignore="MissingConstraints"
+                android:paddingLeft="45sp"
+                style="@style/txt_views"
+                />
+
+            <EditText
+                android:id="@+id/place_secundary_phone"
+                style="@style/inp_texts"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/txt_adress"
+                android:text="@string/register_place_adress"
+                tools:ignore="MissingConstraints"
+                android:paddingLeft="45sp"
+                style="@style/txt_views"
+                />
+
+            <EditText
+                android:id="@+id/place_adress"
+                style="@style/inp_texts"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
