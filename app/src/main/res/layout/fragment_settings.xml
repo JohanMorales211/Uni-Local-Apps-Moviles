@@ -3,79 +3,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".fragment.SettingsFragment"
     android:layout_marginTop="80dp"
-    android:layout_marginBottom="95dp">
+    android:layout_marginBottom="95dp"
+    android:background="@color/material_dynamic_neutral20"
+    android:orientation="vertical"
+    tools:context=".fragment.SettingsFragment">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="16dp"
         android:text="@string/settings_title"
-        android:textSize="24sp"
-        android:padding="16dp"/>
+        android:textColor="@color/white"
+        android:textSize="24sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="16dp"
         android:text="@string/settings_subtitle_notify"
-        android:textSize="18sp"
-        android:padding="16dp"/>
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
     <Switch
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="16dp"
         android:text="@string/settings_option_toReceive_email"
-        android:padding="16dp"/>
+        android:textColor="@color/white" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="16dp"
         android:text="@string/settings_subtitle_privacity"
-        android:textSize="18sp"
-        android:padding="16dp"/>
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
     <Switch
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="16dp"
         android:text="@string/settings_option_privatize_account"
-        android:padding="16dp"/>
+        android:textColor="@color/white" />
 
     <Switch
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="16dp"
         android:text="@string/settings_option_toShow_activity"
-        android:padding="16dp"/>
+        android:textColor="@color/white" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="16dp"
         android:text="@string/settings_subtitle_account"
-        android:textSize="18sp"
-        android:padding="16dp"/>
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button_change_language"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/app_color"
+        android:padding="16dp"
         android:text="@string/settings_change_language"
-        android:padding="16dp"/>
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/button_change_pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/app_color"
+        android:padding="16dp"
         android:text="@string/settings_change_pass"
-        android:padding="16dp"/>
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/button_log_out"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/app_color"
+        android:padding="16dp"
         android:text="@string/settings_logout"
-        android:padding="16dp"/>
-
+        android:textColor="@color/white" />
 
 
 </LinearLayout>

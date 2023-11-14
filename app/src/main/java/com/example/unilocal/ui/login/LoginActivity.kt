@@ -25,7 +25,6 @@ import com.example.unilocal.model.dontUse.Administrator
 import com.example.unilocal.model.dontUse.Moderator
 import com.example.unilocal.model.User
 import com.google.android.material.snackbar.Snackbar
-import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.ktx.firestore
@@ -42,13 +41,6 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        //splash
-        val analytics = FirebaseAnalytics.getInstance(this)
-        val bundle = Bundle()
-        bundle.putString("message", "Integración completa")
-        analytics.logEvent("InitScreen", bundle)
-
 
         /*val sp = getSharedPreferences("sesion", Context.MODE_PRIVATE)
 

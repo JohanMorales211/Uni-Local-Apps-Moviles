@@ -8,18 +8,18 @@
 
     <TextView
         android:id="@+id/title"
-        android:text="@string/register_place_title_choose_categorie"
-        tools:ignore="MissingConstraints"
         style="@style/titles"
-        />
+        android:text="@string/register_place_title_choose_categorie"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/informative_text"
-        android:text="@string/register_place_general_text_choose_categorie"
-        android:layout_marginTop="12sp"
-        android:textAlignment="center"
         style="@style/informative_text"
-        />
+        android:layout_marginTop="12sp"
+        android:text="@string/register_place_general_text_choose_categorie"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -27,20 +27,22 @@
         android:layout_marginTop="40sp"
         android:gravity="center">
 
-    <Button
-        android:id="@+id/btn_hotel"
-        android:layout_width="wrap_content"
-        android:layout_height="40sp"
-        android:text="@string/register_place_categorie_hotel"
-        android:layout_marginRight="30sp"
-        android:background="@drawable/button_custom"/>
+        <Button
+            android:id="@+id/btn_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_marginRight="30sp"
+            android:background="@color/app_color"
+            android:text="@string/register_place_categorie_hotel"
+            android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/btn_coffe"
-        android:layout_width="wrap_content"
-        android:layout_height="40sp"
-        android:text="@string/register_place_categorie_cafe"
-        android:background="@drawable/button_custom"/>
+        <Button
+            android:id="@+id/btn_coffe"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:background="@color/app_color"
+            android:text="@string/register_place_categorie_cafe"
+            android:textColor="@color/white" />
 
 
     </LinearLayout>
@@ -49,9 +51,10 @@
         android:id="@+id/btn_restaurant"
         android:layout_width="150sp"
         android:layout_height="40sp"
-        android:text="@string/register_place_categorie_restaurant"
         android:layout_marginTop="30sp"
-        android:background="@drawable/button_custom"/>
+        android:background="@color/app_color"
+        android:text="@string/register_place_categorie_restaurant"
+        android:textColor="@color/white" />
 
 
     <LinearLayout
@@ -64,16 +67,18 @@
             android:id="@+id/btn_park"
             android:layout_width="wrap_content"
             android:layout_height="40sp"
-            android:text="@string/register_place_categorie_park"
             android:layout_marginRight="30sp"
-            android:background="@drawable/button_custom"/>
+            android:background="@color/app_color"
+            android:text="@string/register_place_categorie_park"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btn_bar"
             android:layout_width="wrap_content"
             android:layout_height="40sp"
+            android:background="@color/app_color"
             android:text="@string/register_place_categorie_bar"
-            android:background="@drawable/button_custom"/>
+            android:textColor="@color/white" />
 
 
     </LinearLayout>

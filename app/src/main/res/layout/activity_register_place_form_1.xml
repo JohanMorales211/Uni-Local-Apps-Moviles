@@ -9,18 +9,18 @@
 
     <TextView
         android:id="@+id/title"
-        android:text="@string/register_place_title_register_place"
-        tools:ignore="MissingConstraints"
         style="@style/titles"
-        />
+        android:text="@string/register_place_title_register_place"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/informative_text"
-        android:text="@string/register_place_general_text"
-        tools:ignore="MissingConstraints"
-        android:layout_margin="20sp"
         style="@style/informative_text"
-        />
+        android:layout_margin="20sp"
+        android:text="@string/register_place_general_text"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints" />
 
 
 
@@ -35,12 +35,12 @@
 
             <TextView
                 android:id="@+id/txt_name"
-                android:text="@string/register_place_name"
-                tools:ignore="MissingConstraints"
+                style="@style/txt_views"
                 android:layout_marginTop="0sp"
                 android:paddingLeft="45sp"
-                style="@style/txt_views"
-                />
+                android:text="@string/register_place_name"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
 
             <EditText
                 android:id="@+id/place_name"
@@ -49,11 +49,11 @@
 
             <TextView
                 android:id="@+id/txt_description"
-                android:text="@string/register_place_description"
-                tools:ignore="MissingConstraints"
-                android:paddingLeft="45sp"
                 style="@style/txt_views"
-                />
+                android:paddingLeft="45sp"
+                android:text="@string/register_place_description"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
 
             <EditText
                 android:id="@+id/place_description"
@@ -70,13 +70,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_weight="1">
+
                     <TextView
                         android:id="@+id/txt_open_hour"
-                        android:text="@string/register_place_open_time"
-                        tools:ignore="MissingConstraints"
                         style="@style/txt_views"
                         android:layout_marginLeft="45sp"
-                        />
+                        android:text="@string/register_place_open_time"
+                        android:textColor="@color/white"
+                        tools:ignore="MissingConstraints" />
 
                     <EditText
                         android:id="@+id/place_open_hour"
@@ -95,12 +96,13 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_weight="1.5">
+
                     <TextView
                         android:id="@+id/txt_close_hour"
-                        android:text="@string/register_place_close_time"
-                        tools:ignore="MissingConstraints"
                         style="@style/txt_views"
-                        />
+                        android:text="@string/register_place_close_time"
+                        android:textColor="@color/white"
+                        tools:ignore="MissingConstraints" />
 
                     <EditText
                         android:id="@+id/place_close_hour"
@@ -113,13 +115,14 @@
                         android:clickable="false"/>
                 </LinearLayout>
             </LinearLayout>
+
             <TextView
                 android:id="@+id/txt_phone"
-                android:text="@string/register_place_phone"
-                tools:ignore="MissingConstraints"
-                android:paddingLeft="45sp"
                 style="@style/txt_views"
-                />
+                android:paddingLeft="45sp"
+                android:text="@string/register_place_phone"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
 
             <EditText
                 android:id="@+id/place_phone"
@@ -129,11 +132,11 @@
 
             <TextView
                 android:id="@+id/txt_secundary_phone"
-                android:text="@string/register_place_secundary_phone"
-                tools:ignore="MissingConstraints"
-                android:paddingLeft="45sp"
                 style="@style/txt_views"
-                />
+                android:paddingLeft="45sp"
+                android:text="@string/register_place_secundary_phone"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
 
             <EditText
                 android:id="@+id/place_secundary_phone"
@@ -143,11 +146,11 @@
 
             <TextView
                 android:id="@+id/txt_adress"
-                android:text="@string/register_place_adress"
-                tools:ignore="MissingConstraints"
-                android:paddingLeft="45sp"
                 style="@style/txt_views"
-                />
+                android:paddingLeft="45sp"
+                android:text="@string/register_place_adress"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
 
             <EditText
                 android:id="@+id/place_adress"

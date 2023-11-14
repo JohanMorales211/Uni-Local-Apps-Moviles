@@ -4,34 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.unilocal.activities.ForgotPassActivity"
+    android:layout_gravity="center"
+    android:background="@color/material_dynamic_neutral_variant20"
     android:orientation="vertical"
-    android:layout_gravity="center">
+    tools:context="com.example.unilocal.activities.ForgotPassActivity">
 
     <TextView
         android:id="@+id/main_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="50dp"
         android:text="@string/forgot_sorry"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="40dp"
         android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        tools:ignore="MissingConstraints"
-        android:paddingLeft="50dp"/>
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/we_want_know_you"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:justificationMode="inter_word"
+        android:paddingLeft="50dp"
         android:text="@string/forgot_recover_pass"
+        android:textColor="@color/white"
         android:textSize="29dp"
         android:textStyle="bold"
-        android:layout_marginBottom="25dp"
-        tools:ignore="MissingConstraints"
-        android:justificationMode="inter_word"
         app:layout_constraintTop_toBottomOf="@+id/main_title"
-        android:paddingLeft="50dp"/>
+        tools:ignore="MissingConstraints" />
 
 
     <androidx.viewpager.widget.ViewPager
@@ -50,23 +52,22 @@
         android:id="@+id/position_layout"
         android:layout_width="35dp"
         android:layout_height="30dp"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:orientation="horizontal"
-        android:backgroundTint="@color/black"/>
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:orientation="horizontal" />
 
     <Button
         android:id="@+id/btn_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/forgot_btn_send"
-        android:textSize="16dp"
-        android:layout_marginTop="100dp"
-        tools:ignore="MissingConstraints"
-        android:backgroundTint="@color/app_color"
-        android:background="@drawable/border_style"
-        android:textColor="@color/white"
         android:layout_gravity="center"
-        />
+        android:layout_marginTop="100dp"
+        android:background="@drawable/border_style"
+        android:backgroundTint="@color/app_color"
+        android:text="@string/forgot_btn_send"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        tools:ignore="MissingConstraints" />
 
 </LinearLayout>

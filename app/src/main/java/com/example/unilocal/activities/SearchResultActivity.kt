@@ -27,6 +27,12 @@ class SearchResultActivity : AppCompatActivity() {
         searchText = intent.extras!!.getString("text", "")
         listPlaces = ArrayList()
 
+        val adapter = PlaceAdapter(listPlaces)
+        binding.listPlaces.adapter = adapter
+        binding.listPlaces.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+
+        Log.e("Texto busqueda", searchText)
+
         if(searchText.isNotEmpty()){
             //listPlaces = Places.findByName(searchText)
             Firebase.firestore
@@ -37,14 +43,11 @@ class SearchResultActivity : AppCompatActivity() {
                     for(doc in it){
                         var place = doc.toObject(Place::class.java)
                         listPlaces.add(place)
+                        adapter.notifyDataSetChanged()
                     }
                 }
 
         }
-
-        val adapter = PlaceAdapter(listPlaces)
-        binding.listPlaces.adapter = adapter
-        binding.listPlaces.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
 
     }
 }

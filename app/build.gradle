@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace 'com.example.unilocal'
-    compileSdk 34
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.unilocal"
@@ -39,36 +39,35 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.10.0'
-    implementation 'androidx.annotation:annotation:1.7.0'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.annotation:annotation:1.6.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.2'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
-    implementation 'com.google.firebase:firebase-firestore-ktx:24.9.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.6.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation "androidx.activity:activity-ktx:1.8.0"
-    implementation "androidx.fragment:fragment-ktx:1.6.2"
-    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation "androidx.activity:activity-ktx:1.7.0"
+    implementation "androidx.fragment:fragment-ktx:1.5.6"
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
     implementation "com.airbnb.android:lottie:3.4.2"
     implementation 'org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0'
     //GOOGLE MAPS
-    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
     implementation 'com.google.android.gms:play-services-location:21.0.1'
     //GSON
-    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
     //FIRE AUTH
-    implementation 'com.google.firebase:firebase-auth:22.2.0'
+    implementation 'com.google.firebase:firebase-auth:17.0.0'
     implementation platform('com.google.firebase:firebase-bom:32.0.0')
-    implementation("com.google.firebase:firebase-analytics")
     //implementation platform('com.google.firebase:firebase-bom:28.4.1')
     //FIRE STOR
     implementation 'com.google.firebase:firebase-storage-ktx'
-    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
     //implementation 'com.google.firebase:firebase-storage'
     //implementation 'com.firebaseui:firebase-ui-database:6.0.2' //QUITAR SI NO FUNCIONA
     //implementation 'com.google.firebase:firebase-storage:20.2.0'

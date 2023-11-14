@@ -9,149 +9,149 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/material_dynamic_neutral20"
         android:orientation="vertical">
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_marginTop="70dp"
-            android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:backgroundTint="#F0F0F0"
-            android:background="@drawable/shape_detail_image"/>
-        <ImageView
-            android:id="@+id/place_image"
-            android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:backgroundTint="#6A6A6A"
-            android:background="@drawable/shape_detail_image"
-            android:src="@drawable/shape_detail_image"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"/>
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:gravity="right"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/owner_name"
-                android:layout_marginRight="5dp"
-                android:textSize="14sp"
-                android:textStyle="bold"
+            <ImageView
+                android:id="@+id/place_image"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/shape_detail_image"
+                android:backgroundTint="#6A6A6A"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shape_detail_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:background="@drawable/transparent_background"/>
-
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/user_image"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:padding="5dp"
-                app:strokeWidth="5dp"
-                app:shapeAppearanceOverlay="@style/circular"
-                app:strokeColor="@color/white"
-                android:src="@mipmap/ic_launcher_round"
-                android:background="@drawable/transparent_background"/>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="130dp"
-            android:layout_marginLeft="45dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/place_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="40sp"
-                android:textColor="@color/white"
-                android:background="@drawable/transparent_background"/>
-
-            <LinearLayout
-                android:layout_marginLeft="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@drawable/transparent_background">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_location"/>
-
-                <TextView
-                    android:id="@+id/place_location"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="45dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
                 android:orientation="horizontal">
 
+                <TextView
+                    android:id="@+id/owner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/transparent_background"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/transparent_background"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="5dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="130dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/place_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_background"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/transparent_background"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_star" />
+                        android:src="@drawable/ic_location" />
 
                     <TextView
-                        android:layout_marginTop="2dp"
-                        android:layout_marginLeft="2dp"
-                        android:id="@+id/place_rating"
+                        android:id="@+id/place_location"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:text="-- / --" />
+                        android:textColor="@color/white" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginLeft="50dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="45dp"
+                    android:orientation="horizontal">
 
-                    <ImageView
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star" />
+
+                        <TextView
+                            android:id="@+id/place_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:text="-- / --"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_watch"/>
+                        android:layout_marginLeft="50dp">
 
-                    <TextView
-                        android:layout_marginTop="2dp"
-                        android:layout_marginLeft="2dp"
-                        android:id="@+id/place_schedule"
-                        android:layout_width="wrap_content"
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_watch" />
+
+                        <TextView
+                            android:id="@+id/place_schedule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Texto 2"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:text="Texto 2" />
-                </LinearLayout>
+                        android:layout_marginLeft="50dp">
 
-                <LinearLayout
-                    android:layout_marginLeft="50dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/comments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_comment" />
 
-                    <ImageView
-                        android:id="@+id/comments"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_comment"/>
+
+                    </LinearLayout>
 
 
                 </LinearLayout>
@@ -159,165 +159,167 @@
 
             </LinearLayout>
 
+        </FrameLayout>
 
-        </LinearLayout>
-
-    </FrameLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
-
-        <LinearLayout
-            android:id="@+id/place_content"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/place_image"
-            android:layout_margin="20dp"
-            android:paddingBottom="42dp"
-            android:orientation="vertical"
-            android:clipToPadding="false">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/place_icon_category"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="10dp"
-                    android:fontFamily="@font/font_awesome_6_free_solid_900"
-                    android:textSize="20sp" />
-
-            </RelativeLayout>
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
             <LinearLayout
+                android:id="@+id/place_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:layout_below="@+id/place_image"
+                android:layout_margin="20dp"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingBottom="42dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:fontFamily="@font/font_awesome_6_free_solid_900"
-                    android:text="\uf05a"
-                    android:textSize="20sp" />
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/place_description"
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/place_icon_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp" />
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:text="\uf05a"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/place_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#989696" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:text="\uf017"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/place_schedules"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#989696" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:text="\uf124"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/place_direction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:text="\uf095"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/place_phone_numbers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/comments_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="300dp" />
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/place_map_location"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    tools:context=".activities.DetailPlaceActivity" />
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginBottom="15dp"
-                android:background="#989696" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:fontFamily="@font/font_awesome_6_free_solid_900"
-                    android:text="\uf017"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/place_schedules"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginBottom="15dp"
-                android:background="#989696" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:fontFamily="@font/font_awesome_6_free_solid_900"
-                    android:text="\uf124"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/place_direction"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:fontFamily="@font/font_awesome_6_free_solid_900"
-                    android:text="\uf095"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/place_phone_numbers"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
-
-            </LinearLayout>
-
-            <com.google.android.gms.maps.MapView
-                android:id="@+id/place_map_location"
-                android:layout_width="match_parent"
-                android:layout_height="500dp"
-                tools:context=".activities.DetailPlaceActivity"
-                android:name="com.google.android.gms.maps.SupportMapFragment" />
-
-        </LinearLayout>
-
-    </ScrollView>
+        </ScrollView>
 
     </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/comments_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="300dp"/>
 
 
 </RelativeLayout>
