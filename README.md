@@ -19,7 +19,7 @@ Unilocal es una aplicación Android diseñada para facilitar la gestión de loca
 
 ## Instalación y Ejecución 🛠️
 
-1. **Clona el repositorio:** `git clone https://github.com/tu-repositorio/unilocal.git`
+1. **Clona el repositorio:** `git clone https://github.com/JohanMorales211/Uni-Local-Apps-Moviles.git`
 2. **Abre el proyecto en Android Studio:** Importa el proyecto en Android Studio.
 3. **Configura Firebase:**  Crea un proyecto Firebase y configura las credenciales en la aplicación.
 4. **Compila y ejecuta la aplicación:**  Compila y ejecuta la aplicación en un dispositivo Android o emulador.
